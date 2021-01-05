@@ -1,0 +1,10 @@
+version: "2"
+services:
+  web:
+    build: .
+    image: cbctf2021_1/so_so_easy_nodejs
+    restart: always
+    ports:
+      - "8083:80"
+    environment:
+      - flag=flag{So_So_esay_nodejs}

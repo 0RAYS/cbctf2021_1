@@ -1,0 +1,7 @@
+version: "3.2"
+
+services:
+  web:
+    image: registry.cn-hangzhou.aliyuncs.com/w4ndel1/tp5_faka:v1
+    ports:
+      - 8010:80

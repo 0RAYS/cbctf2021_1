@@ -1,0 +1,49 @@
+*{
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	font-family:"microsoft yahei";
+}
+.code-box{
+	display: block;
+	position: relative;
+	z-index:100;
+	
+}
+.code-gray{
+	position:absolute;
+	z-index: 101;
+	background-color: rgba(0,0,0,0.8);
+	top:0;
+	left:0;
+	text-align:center;
+}
+.code-fail{
+	width: 100%;
+	text-align:center;
+	color:#fff;
+	display:block;
+	margin-top:35%;
+	font-size: 12px;
+}
+.code-refresh{
+	border-radius: 4px;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	margin-top:5%;
+	width:50%;
+	height:18%;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border:0;
+	font-size:12px;
+	color: #333;
+	background-color: #fff;
+	border:1px solid #ccc;
+}

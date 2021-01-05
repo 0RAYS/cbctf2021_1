@@ -1,0 +1,9 @@
+version: "3"
+services:
+  web1:
+    build:
+      context: .
+    image: cbctf2021_1/tongqiangtiebi
+    ports:
+      - "8012:80"
+    tty: True

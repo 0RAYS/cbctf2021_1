@@ -1,0 +1,60 @@
+@charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 10px;
+}
+body{
+  font-size: 1.6rem;
+  /* font-family: tahoma, arial, "Hiragino Sans GB", "宋体", sans-serif; */
+  font-family: 'Times New Roman', Times, serif, arial, "Hiragino Sans GB", "宋体", sans-serif;
+  /* background-color: #f2f2f2 !important; */
+}
+ul,ol,dl{
+  list-style: none;
+}
+i,
+s {
+  font-style: normal;
+  text-decoration: none;
+}
+fieldset,input,img,input,button,textarea{
+  border: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+a{
+  color:'';
+  text-decoration: none;
+}
+a:hover{
+  color:'';
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: normal;
+  font-size: 100%;
+}
+/* 浮动 */
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+/* 清除浮动 */
+.clearfix::before,
+.clearfix::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+/* 版心 */
+.w{
+width: 119rem;
+margin: 0 auto;
+}

@@ -1,0 +1,1009 @@
+@charset "utf-8";
+@-webkit-keyframes loginmove{0%{-webkit-transform:scale(1)}100%{-webkit-transform:scale(1.05)}}
+@-moz-keyframes loginmove{0%{-moz-transform:scale(1)}100%{-moz-transform:scale(1.05)}}
+@keyframes loginmove{
+	0%{-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);-o-transform:scale(1);transform:scale(1)}
+	100%{-webkit-transform:scale(1.05);-moz-transform:scale(1.05);-ms-transform:scale(1.05);-o-transform:scale(1.05);transform:scale(1.05)}
+}
+/* -------------------------------------------------------------- 
+	Resets default browser CSS.
+-------------------------------------------------------------- */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, input
+{margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:"microsoft yahei";vertical-align:baseline;}
+table, caption, tbody, tfoot, thead, tr, th, td
+{margin:0;padding:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+body {line-height:1.5;}
+table {border-collapse:separate;border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;}
+table, td, th {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:"";}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+input {border:none;}
+ul{list-style:none;}
+label{/*cursor:pointer;*/color:#666;}
+
+body {font-size:75%;color:#222;background:#fff;font-family:Helvetica, Arial,"microsoft yahei", sans-serif;}
+h1, h2, h3, h4, h5, h6 {font-weight:bold;color:#000;}
+/*----- 2012��10��23�� ���ڴ���ͷ�ı�����ƻ��������µ���ʽʶ��������Ǹ�������  maqt  ��ʼ -----*/
+h1 {font-size:36px;font-family:"microsoft yahei", sans-serif;}
+/*----- ���� -----*/
+h2 {font-size:45px;float:left;color:#CCC;margin-top:10px;font-weight:normal;}
+h3 {font-size:16px;margin:8px 0;margin:8px 0 7px\0;color:#000;}
+h4 {font-size:14px;margin:8px 0;color:#666;}
+h5 {font-size:12px;margin:8px 0;color:#666;}
+h6 {font-size:12px;margin:8px 0;}
+
+
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
+p {color:#666;}
+a:focus, a:hover {text-decoration:underline;}
+a {
+	color:#666;
+	text-decoration:none;
+	cursor:pointer;
+	blr:expression(this.onFocus=this.blur());/*ie ȥ�����������߿� */
+	outline:none;/*ff ȥ�����������߿� */
+}
+span{color:#666;}
+textarea{overflow:hidden;}
+fieldset {padding:1.4em;margin:0 0 1.5em 0;border:1px solid #ccc;}
+legend {font-weight:bold;font-size:1.2em;}
+
+input.text:focus, input.title:focus, textarea:focus, select:focus {border:1px solid #666;}
+input.text, input.title {width:300px;padding:5px;}
+input.title {font-size:1.5em;}
+
+
+
+
+
+input.text, input.title, textarea, select {margin:0 0;border:1px solid #dedede;font-size:12px;color:#666;font-family: Helvetica,Arial,"microsoft yahei",sans-serif;}
+select{width:120px;float:left;padding:2px;height:25px;line-height:25px;}
+
+
+/*-------------------------- 2013-01-12 ������ʽΪ��׼�泣����ʽ maqt ��ʼ -------------------------*/
+
+/*--------------------base  css maqt start-------------------*/
+.right{float:right !important;}
+.row {float:left; width:100%;}
+.left{float:left !important;}
+.clear{clear:both;}
+.overflow_hidden{overflow:hidden;clear:both;}
+.display_block{display:block;}
+.postion_relative{position: relative;}
+.cursor_pointer{cursor: pointer!important;}
+.bg_image_none{background-image: none !important;}
+.text_overflow{overflow: hidden;white-space: nowrap;-o-text-overflow: ellipsis;text-overflow: ellipsis;}
+
+.border_bottom{border-bottom:solid 1px #DEDEDE;}
+.border_bottom_dash{border-bottom:dashed 1px #DEDEDE;}
+.border_top{border-top:solid 1px #DEDEDE;}
+.noborder{border:none !important;}
+.border_top_none{border-top: none !important;}
+.border_bottom_none{border-bottom: none !important;}
+
+.margin_left_none{margin-left:0 !important;}
+.margin_right_none{margin-right:0 !important;}
+.margin_bottom_none{margin-bottom:0 !important;}
+.margin_top_none{margin-top:0 !important;}
+.padding_bottom_none{padding-bottom:0 !important;}
+
+
+.graybold {font-weight:bold;}
+.black{color:#000 !important;}
+.blackbold {font-weight:bold;color:#000 !important;}
+.black_333{color:#333333!important;}
+.gray_666{color:#666666!important;}
+.lightgray{color:#999 !important;}
+.lightgray *{color:#999;}
+.lightgray_ccc{color: #ccc;}
+
+
+a.highlight, .highlight, .highlight a,a.blue{font-weight:normal;}
+a.highlightheader{font-weight:bold;font-size:14px;}
+a.bluebold, .bluebold ,a.navbar_titer{font-weight:bold;}
+
+
+span.red {color:red;}
+.script_red{color: #ff0000 !important;}
+.orange{color:#f17842!important;}
+
+
+.green{font-weight:normal;color:#390 !important;}
+.greenbold{color:#390;font-weight:bold;}
+
+/*--------------------base css   maqt  end-------------------*/
+
+
+/*--------------------templet.css maqt start------------------*/
+
+/*----- 3.������ɫ ��ʼ -------*/
+
+a.highlight, .highlight, .highlight a{color:#09C !important;}
+a.highlightheader{color:#09C;}
+a.blue{color:#09C;}
+a.bluebold, .bluebold ,a.navbar_titer{color:#09C;}
+.dark_blue{color: #00607f !important;}
+/*------- 3.������ɫ ����----------*/
+
+/*--------------------templet.css maqt end-----------------*/
+
+
+/*----- 2014-11-18 字体图标样式 end   -----*/
+
+
+/*登陆页样式  maqt 开始*/
+.index{
+	height:100%;
+	max-height:auto;
+	max-width:auto;
+	/*width:100%;
+	
+	font-family:"microsoft yahei";*/
+}
+.login_conatiner{
+	height: 100%;
+	/* min-height:669px;
+     min-width: 1070px;*/
+
+
+	position: relative;
+}
+.login_img_01{
+
+	left: 0;
+	/*   	min-height:600px;
+        min-width: 960px;*/
+	max-height:auto;
+	max-width:auto;
+	position: absolute;
+	width:100%;
+	top: 0;
+	z-index: -1;
+
+	-webkit-animation:loginmove 5s forwards;
+	-moz-animation:loginmove 5s forwards;
+	animation:loginmove 5s forwards;
+}
+
+#login_main_conatiner{
+	left:0;
+	top:0;
+	width:100%;
+	z-index:2;
+	position: relative;
+}
+
+.login_logo{
+	float:left;
+	margin:0 0 0 3px;
+}
+.login_logo_title{
+	float:left;
+	margin:0 0 0 3px;
+}
+.login_logo_bg{
+	float:left;
+	margin:0;
+	width: 391px;
+	height: 148px;
+	background: url(../image/logo-pc.png) no-repeat 0 0;
+}
+.floor1{
+	width:calc(100% - 244px);
+	margin:0 122px;
+}
+.floor1 .logo{
+	display:block;
+	width: 100%;
+	height: 148px;
+}
+.floor1 .logo .title{
+	float:left;
+	font-size:28px;
+	color:#fff;
+	margin-top:50px;
+}
+.floor1 h1{
+	display:table-cell;
+	padding-left:5%
+}
+.floor1 .text{
+	display:block;
+}
+.floor1 .text>div{
+	display:table-cell;
+	vertical-align:middle;
+	padding-left:7%
+}
+.shadow-bar{
+	position:relative;
+	width:100%;
+	height:165px;
+	background:url(../image/shadow-bg.png) repeat-x 0 0;
+}
+.dp_02{
+	font-size:24px;
+	height:43px;
+	line-height:43px;
+	margin-top:10px;
+	width:437px;
+	background: url(../image/shadow_bar_02.png) 0 0 no-repeat\9;
+}
+
+.login_box_title{
+	margin-top:66px;
+	font-size:22px;
+	color:#828888;
+	float:left;
+}
+
+.floor2{
+	position:fixed;
+	width: 395px;
+	right:10%;
+	bottom:35%;
+}
+.box-open{
+	overflow: hidden;
+}
+
+/*.box-open .login_box_up{*/
+/*display:none;*/
+/*}*/
+.content_login_box{
+	float:left;
+	width: 340px;
+	border: 1px solid #dedede;
+	background: url(../image/content_login_box_bg.png) scroll repeat 0 0 transparent;
+}
+.toggle_btn{
+
+	float:left;
+	width:49px;
+	height:39px;
+	line-height:39px;
+	color:#999;
+	border:1px solid #dadbdc;
+	font-size:14px;
+	text-align:center;
+	border-left:none;
+	background:url(../image/content_login_box_bg.png) scroll repeat 0 0 transparent;
+}
+.toggle_btn:hover{
+	cursor:pointer;
+}
+
+.plus{
+
+	width: 17px;
+	height: 17px;
+	float: left;
+	margin:11px  0 0 15px;
+	background: url(../image/plus.png) no-repeat 0 0;
+}
+.minus{
+	width: 17px;
+	height: 17px;
+	float: left;
+	margin:11px  0 0 15px;
+	background: url(../image/minus.png) no-repeat 0 0;
+}
+
+.container_space{
+	width: 1090px;
+	height: 515px;
+	margin: 0 auto;
+}
+.login_box_up{
+	float: left;
+	width: 339px;
+	position:relative;
+	padding-bottom: 10px;
+}
+.login_box_up .error{
+	position:absolute;
+	top:45px;
+	left:20px;
+}
+.login_box_up .error .notice{
+	color:#ff0000;
+}
+.login_box_title{
+	float: left;
+	width: 295px;
+	height: 42px;
+	margin: 11px 0 1px 21px;
+	_margin-left: 11px;
+}
+.login_box_title_name{
+	float: left;
+	height: 20px;
+	font-family: "microsoft yahei";
+	font-size: 14px;
+	font-weight: bold;
+}
+.login_box_title_notice{
+	float: left;
+	width: 278px;
+	margin: 2px 0 0 12px;
+}
+.login_box_input{
+	float: left;
+	width: calc(100% - 63px);
+	height: 32px;
+	line-height: 32px;
+	padding: 0 10px;
+	border: 1px solid #dedede;
+	margin: 14px 0 1px 21px;
+	font-size: 14px;
+	color: #999;
+	box-shadow: none;
+}
+.login_box_input.err {
+	border-color:#cd8480;
+	background-color:#fff2f2;
+}
+.down_link_choice{
+	float: left;
+	width: calc(100% - 42px);
+	margin: 5px 0 0 21px;
+}
+.login_box_checkbox{
+	float: left;
+	margin: 3px 6px 0 1px;
+	*margin-top: -2px;
+	_margin-top: -2px;
+}
+.login_box_checkbox_label{
+	float: left;
+	height: 18px;
+	line-height: 18px;
+	color: #999;
+}
+.login_box_sepline{
+	float: left;
+	height: 18px;
+	line-height: 18px;
+	*line-height: 14px;
+	_line-height: 14px;
+	color: #dedede;
+	margin: 0 9px 0 9px;
+}
+.login_box_psd{
+	float: right;
+	height: 18px;
+	line-height: 18px;
+	color: #2379bc;
+}
+
+.login_box_down{
+	float: left;
+	width: 100%;
+	padding-bottom:7px;
+}
+.ide_code{
+	float: left;
+	width: 265px;
+	margin: 12px 0 0 21px;
+	_margin-left: 11px;
+}
+.ide_code_label{
+	float: left;
+	width: 48px;
+	height: 28px;
+	line-height: 28px;
+	text-align: right;
+	color: #999;
+}
+.ide_code_input{
+	float: left;
+	width: 54px;
+	height: 26px;
+	line-height: 26px;
+	border: 1px solid #dedede;
+	padding: 0 5px;
+}
+.ide_code_input.err {
+	border-color:#cd8480;
+	background-color:#fff2f2;
+}
+.ide_code_image{
+	float: left;
+	width: 74px;
+	height: 26px;
+	border: 1px solid #dedede;
+	margin: 0 0 0 8px;
+}
+.ide_code_next{
+	float: left;
+	height: 18px;
+	line-height: 18px;
+	color: #09c;
+	margin: 4px 0 0 8px;
+	white-space: nowrap;
+}
+.login_box_notice{
+	float: left;
+	width: 259px;
+	line-height: 22px;
+	padding: 8px 18px;
+}
+.login_footer_01{
+	position: absolute;
+	left: 50%;
+	margin: 604px 0 0 -480px!important;
+}
+.login_box_tab {
+	width:100%;
+	height:41px;
+	float:left;
+	border-radius:3px 3px 0 0;
+}
+.login_box_tab a{
+	width:calc((100% - 1px) / 2);
+	height:40px;
+	text-align:center;
+	border-bottom:1px solid #dedede;
+	display:block;
+	float:left;
+	line-height:42px;
+	background-color:#e7e8ea;
+	cursor:pointer;
+	font-family:"Microsoft YaHei UI";
+	font-size:14px;
+	text-decoration:none;
+	font-weight:bold;
+	color:#69696b;
+
+}
+.login_box_tab a:first-child{
+	border-right:1px solid #dedede;
+}
+.login_box_tab a:hover{
+	text-decoration:none;
+
+}
+.login_box_tab a.active{
+	height:41px;
+	border-bottom:none;
+	background:none;
+}
+.login_box_tab a.active:hover{
+	cursor:auto;
+}
+.login_code{
+	float: left;
+	
+}
+
+.login_code_notice{
+	float: left;
+	width: 100%;
+	text-align:center;
+	margin:41px 0 0 0;
+	color:#666;
+	padding-bottom:9px;
+}
+.margin_top_20{
+	margin-top:20px;
+}
+.code_row{
+	float: left;
+	margin:14px 0 0 20px;
+}
+.code_label{
+	float: left;
+	line-height: 34px;
+}
+.code_input{
+	margin:0;
+	width: 146px;
+	height:26px;
+
+}
+.code_img{
+	float: left;
+	border:1px solid #dedede;
+	margin: 0 0 0 6px;
+	height:26px;
+	width:74px;
+}
+.code_link{
+	float: left;
+	color:#2379bc;
+	line-height: 34px;
+	margin-left:10px;
+}
+
+.new_student {
+	font-size:12px;
+	font-family:"Microsoft YaHei UI";
+	color:#666;
+	line-height:23px;
+	padding: 0px 18px;
+	width: 100%;
+	margin:8px 0 0;
+	box-sizing: border-box;
+}
+.new_student a {
+	font-size:12px;
+	font-family:"Microsoft YaHei UI";
+	color:#2379bc;
+	line-height:18px;
+}
+.landing_btn_bg{
+	float: left;
+	background-image:none;
+	background-color:#003a8f;
+	width: calc(100% - 40px);
+	line-height: 1;
+	padding:10px 0;
+	cursor: pointer;
+	border：:1px solid #2b8fad;
+	font-family:"Microsoft YaHei";
+	font-size:18px;
+	border-radius:6px;
+	margin: 12px 0 0 21px;
+	color:#fff;
+	text-align:center;
+	position:relative;
+	box-sizing: border-box;
+}
+.login_box_landing_btn{
+	float: left;
+	background: transparent;
+	width: 100%;
+	height: 38px;
+	cursor: pointer;
+	font-family:"Microsoft YaHei";
+	font-size:18px;
+	border-radius:6px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	box-sizing: border-box;
+
+}
+.login_way {
+	font-size:12px;
+	font-family:"Microsoft YaHei UI";
+	color:#666;
+	width:164px;
+	margin:4px 0 0 calc(50% - 82px);
+	float:left;
+}
+
+.login_by_tencent {
+	background: transparent url("../image/login_tencent_icon.png") no-repeat scroll 0 0;
+	color: #666;
+	float: left;
+	height: 18px;
+	line-height: 18px;
+	margin: 5px 0 0;
+	padding: 0 0 0 20px;
+	font-size:12px;
+}
+.login_by_wechat {
+	background: transparent url("../image/login_wechat_icon.png") no-repeat scroll 0 0;
+	color: #666;
+	float: left;
+	height: 18px;
+	line-height: 18px;
+	margin: 5px 0 0;
+	padding: 0 0 0 24px;
+	font-size:12px;
+}
+.code-gray {
+    position: absolute;
+    z-index: 101;
+    background-color: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+.code-fail{
+	width: 100%;
+	text-align:center;
+	color:#fff;
+	display:block;
+	margin-top:35%;
+	font-size: 12px;
+}
+.code-refresh{
+	border-radius: 4px;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	margin-top:5%;
+	width:50%;
+	height:18%;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border:0;
+	font-size:12px;
+	color: #333;
+	background-color: #fff;
+	border:1px solid #ccc;
+}
+.code-box {
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+/*页脚*/
+#footer{
+	position:fixed;
+	bottom: 40px;
+	width:100%;
+}
+.login_footer{
+	width:calc(100% - 244px);
+	margin:0 122px;
+
+}
+.login_footer span{
+	color: #fff;
+	font-size:14px;
+}
+
+
+.login_box_checkbox{
+	float: left;
+	width:14px;
+	height:14px;
+	position:relative;
+	margin: 3px 6px 0 1px;
+	*margin-top: 1px;
+}
+@media screen and (max-height:900px){
+	.floor2{
+		bottom:calc((100% - 395px) * 0.5);
+	}
+}
+@media screen and (max-height:680px){
+	.floor2{
+		bottom:calc((100% - 395px) * 0.3);
+	}
+}
+@media screen and (max-height:613px){
+
+
+	#footer{
+		bottom:20px;
+	}
+}
+@media screen and (max-width: 1250px){
+	.login_footer{
+		width:calc(100% - 40px);
+		margin:0 20px;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.toggle_btn{display: none;}
+	.shadow-bar{
+		height:auto;
+
+	}
+	#login_main_conatiner{
+		position:static;
+		width:100%;
+	}
+	.logo_light{
+		float:left;
+		width: 100%;
+		height:75px;
+		margin-top:0px;
+		background:url(../image/logo-dark-l.png) no-repeat center 0;
+		background-size:auto 70px;
+	}
+	.floor2{
+		width: 100%;
+		float: left;
+		padding: 20px;
+		border-radius: 5px;
+		position:static;
+		box-sizing:border-box;
+		height:auto!important;
+		border:none;
+	}
+	.login_conatiner{
+
+		float:left;
+		box-sizing:border-box;
+	}
+	.login_box_title{
+		margin-top:0;
+	}
+	.login_checkbox_01{
+		margin-top: 0;
+	}
+	.login_error{
+		margin-top:4px;
+	}
+	.floor2 .user_name{
+		width:100%;
+		margin-top: 10px;
+	}
+	.floor2 .user_name{
+		height:38px;
+	}
+	.floor2 .auth_code_input{
+		width:calc( 100% - 116px );
+	}
+	.floor2 .auth_code_input .login_text_01{
+		width:calc( 100% - 20px );
+		margin-left:10px;
+	}
+	.floor2 .auth_code_img{
+		width:102px;
+	}
+	.floor2 .auth_code_img img{
+		width:62px;
+	}
+	.login_text_01{
+		height: 38px;
+		line-height:40px;
+		width:calc(100% - 55px);
+	}
+	.login_btn_01{
+		height:38px;
+		font-size: 14px;
+		width: 100%;
+		margin-top: 10px;
+	}
+	.login_notice{
+		margin-top: 10px;
+	}
+	.login_icon{
+		margin: 10px 20px 0 10px;
+	}
+	.login_copyright{
+		float: left;
+		word-break: break-all;
+		word-wrap: break-word;
+		margin-top: 10px;
+	}
+
+	.third_party_box{
+		float:left;
+		width:100%;
+	}
+	.blue_line{
+		margin:12px 0 0;
+	}
+	.third_party_login{
+		margin:10px 0 0 calc(50% - 33px);
+	}
+	.qq_login{
+		background-image:url(../image/qq-login.png);
+		width:20px;
+		height:20px;
+		display:block;
+		float:left;
+		background-size:100%;
+	}
+	.wechat_login{
+		background-image:url(../image/wechat-login.png);
+		width:25px;
+		height:20px;
+		display:block;
+		float:left;
+		margin-left:20px;
+		background-size:100%;
+	}
+	.qq_login:hover{
+		background-image:url(../image/qq-login.png);
+		width:20px;
+		height:20px;
+	}
+	.wechat_login:hover{
+		background-image:url(../image/wechat-login.png);
+		width:25px;
+		height:20px;
+	}
+	.floor1 {
+		width:100%;
+		margin: 0 0;
+	}
+	.floor1 .logo{height:auto;}
+	.floor1 .logo .title{display: none;}
+	.floor2{margin:0;width:100%;padding:0 20px;box-sizing: border-box;}
+	.login_box_up{width:100%;}
+	.content_login_box{margin-top:0;width:100%;box-sizing: border-box;}
+	#footer{display: none;}
+	.login_logo_bg{
+		width:100%;
+		background: center 10px url(../image/logo-mobile.png) no-repeat;
+		height:77px;
+		background-size:auto  54px;
+		margin-top:10px;
+	}
+	.login_box_checkbox{
+		margin: 1px 6px 0 1px;
+	}
+
+}
+.fluid_container {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 0;
+}
+.b_360 {
+    display: none;
+    left: -475px;
+    position: absolute;
+    top: -25px;
+}
+.browser {
+    box-sizing: border-box;
+    color: #666;
+    font-family: "Microsoft YaHei UI";
+    font-size: 14px;
+    line-height: 23px;
+    margin: 0 0 0;
+    padding: 0 18px;
+    width: 100%;
+}
+.browser a {
+    background-repeat: no-repeat;
+    color: #666;
+    float: left;
+    font-family: "Microsoft YaHei UI";
+    font-size: 12px;
+    height: 18px;
+    line-height: 18px;
+    margin: 3px 0 0 10px;
+    padding: 0 0 0 25px;
+}
+.google_pic {
+    background-image: url("../image/google-pic.png");
+}
+.firefox_pic {
+    background-image: url("../image/firefox-pic.png");
+}
+.ie_pic {
+    background-image: url("../image/ie-pic.png");
+}
+
+/*icheck插件标准小checkbox美化样式*/
+/* iCheck plugin Minimal skin, black
+----------------------------------- */
+.icheckbox_minimal,
+.iradio_minimal {
+	display: inline-block;
+	*display: inline;
+
+	margin: 0;
+	padding: 0;
+	width: 14px;
+	height: 14px;
+	background: url(../image/minimal.png) no-repeat;
+	border: none;
+	cursor: pointer;
+}
+
+.icheckbox_minimal {
+	background-position: 0 0;
+}
+.icheckbox_minimal.hover {
+	background-position: -20px 0;
+}
+.icheckbox_minimal.checked {
+	background-position: -40px 0;
+}
+.icheckbox_minimal.disabled {
+	background-position: -60px 0;
+	cursor: default;
+}
+.icheckbox_minimal.checked.disabled {
+	background-position: -80px 0;
+}
+
+.iradio_minimal {
+	background-position: -100px 0;
+}
+.iradio_minimal.hover {
+	background-position: -120px 0;
+}
+.iradio_minimal.checked {
+	background-position: -140px 0;
+}
+.iradio_minimal.disabled {
+	background-position: -160px 0;
+	cursor: default;
+}
+.iradio_minimal.checked.disabled {
+	background-position: -180px 0;
+}
+
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
+	.icheckbox_minimal,
+	.iradio_minimal {
+		background-image: url(../image/minimal@2x.png);
+		-webkit-background-size: 200px 20px;
+		background-size: 200px 20px;
+	}
+}
+/*icheck插件标准小checkbox美化样式*/
+
+/* JSP页面上的样式迁移到样式文件中 MOVE BY TJL BEGIN */
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #09f;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+#back_to_camera {
+	background: rgba(255, 255, 255, .9);
+	clear: both;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	padding: 20px;
+	position: relative;
+	z-index: 1;
+}
+
+.fluid_container {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 0;
+}
+
+#camera_wrap_4 {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	margin-bottom: 0 !important;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+
+.camera_bar {
+	z-index: 2;
+}
+
+.camera_thumbs {
+	margin-top: -100px;
+	position: relative;
+	z-index: 1;
+}
+
+.camera_thumbs_cont {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+
+.camera_overlayer {
+	opacity: .1;
+}
+/* JSP页面上的样式迁移到样式文件中 MOVE BY TJL END */
+
